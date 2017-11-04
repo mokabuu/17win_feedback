@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Feedback申請</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	</head>
+	<body style="background:#EEE;">
+		<div class="mdl-card mdl-shadow--2dp" style="margin:auto;margin-top: 32px;">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">Feedback Entry</h2>
+			</div>
+			<div class="mdl-card__supporting-text">
+				<form action="./index.php" method="post">
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" name="name" id="name" required autofocus>
+						<label class="mdl-textfield__label" for="name">お名前</label>
+					</div>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="text" name="bandname" id="bandname" required>
+						<label class="mdl-textfield__label" for="name">バンド名</label>
+					</div>
+					<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+						<input class="mdl-textfield__input" type="email" name="email" id="email" required>
+						<label class="mdl-textfield__label" for="name">メールアドレス</label>
+					</div>
+					<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="送信">
+				</form>
+				<hr>
+				<p><em style="color:#444;">※2次オーディションに進むバンドさんの通過曲を優先的に返します。2次オーディションに進む演奏のFeedbackが終わり次第申請してくれた順番に返す予定です。ご理解ご協力宜しくお願いします。</em></p>
+			</div>
+		</div>
+	</body>
+</html>
